@@ -602,7 +602,7 @@ a:hover {
   padding: 3px;
   position: fixed;
   top: 50%;
-  left: 100%;
+  left: 98%;
   -webkit-transform: translate(-100%, 0);
           transform: translate(-100%, 0);
 }
