@@ -1,4 +1,6 @@
 @import "normalize.css";
+
+/* --- Begin ---ReactNative flexbox settings */
 body, div, span {
   box-sizing: border-box;
   position: relative;
@@ -13,7 +15,9 @@ body, div, span {
   margin: 0;
   padding: 0;
 }
+/* --- End ---ReactNative flexbox settings */
 
+/*--- Begin --- 页面的文字样式和背景颜色*/
 body {
   background-color: #1F1E34;
   color: #FFF;
@@ -47,7 +51,9 @@ a:hover {
   color: #DADADA;
   text-decoration: none;
 }
+/*--- End --- 页面的文字样式和背景颜色*/
 
+/*页面 4 个 section 样式*/
 .section {
   height: 100vh;
   display: flex;
@@ -57,16 +63,17 @@ a:hover {
   overflow: hidden;
 }
 
+/*横排*/
+.rowContainer {
+  flex-direction: row;
+}
+
 .navContainer {
   flex-direction: row;
 }
 
 .navContainer a {
   padding: 5px;
-}
-
-.rowContainer {
-  flex-direction: row;
 }
 
 .iphone-demo {
@@ -125,6 +132,7 @@ a:hover {
   background-color: #fff;
 }
 
+/*--- Begin --- 背景图片、渐变图层、上层文字*/
 #intro-section {
   background-image: url(../img/background.jpg);
   background-size: cover;
@@ -140,6 +148,8 @@ a:hover {
   background-image: linear-gradient(rgba(0,0,0,0),rgba(31,30,52,1));
 }
 
+/*让图片和介绍文字在渐变图层的上方*/
 .react-logo, .react-intro {
   position: relative;
 }
+/*--- End --- 背景图片、渐变图层、上层文字*/
